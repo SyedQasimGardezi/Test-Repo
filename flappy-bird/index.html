@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flappy Bird - KAN-17</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="game-wrapper">
+      <div id="ui">
+        <div id="title">Flappy Bird</div>
+        <div id="scoreboard">
+          <div>Score: <span id="score">0</span></div>
+          <div>Best: <span id="best-score">0</span></div>
+        </div>
+      </div>
+
+      <div id="game-container">
+        <div id="bird"></div>
+        <!-- Pipes will be injected here by JS -->
+        <div id="ground"></div>
+        <div id="start-screen" class="overlay visible">
+          <h1>Flappy Bird</h1>
+          <p>Press Space / Click / Tap to start</p>
+        </div>
+        <div id="game-over-screen" class="overlay">
+          <h1>Game Over</h1>
+          <p>Your score: <span id="final-score">0</span></p>
+          <p>Best: <span id="final-best-score">0</span></p>
+          <button id="restart-btn">Play Again</button>
+        </div>
+      </div>
+
+      <footer id="controls-hint">
+        <span>Controls: Space / ↑ / Click / Tap to flap</span>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
